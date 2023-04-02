@@ -1,0 +1,34 @@
+#question number 3
+class Student:
+    
+    def __init__(self):
+        self.__name = ""
+        self.__rollNumber = ""
+    
+    def getName(self):
+        return self.__name
+    
+    def setName(self, name):
+        self.__name = name
+    
+    def getRollNumber(self):
+        return self.__rollNumber
+    
+    def setRollNumber(self, rollNumber):
+        self.__rollNumber = rollNumber
+
+
+# Create an instance of the Student class
+student = Student()
+
+# Get the name and roll number from the user
+name = input("Enter student name: ")
+rollNumber = input("Enter student roll number: ")
+
+# Set the name and roll number using the setter methods
+student.setName(name)
+student.setRollNumber(rollNumber)
+
+# Get and print the name and roll number using the getter methods
+print("Student name:", student.getName())
+print("Student roll number:", student.getRollNumber())
